@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
       - name: Set up Ruby
-        uses: ruby/setup-ruby@708024e6c902387ab41de36e1669e43b5ee7085e # v1
+        uses: ruby/setup-ruby@19a43a6a2428d455dbd1b85344698725179c9d8c # v1
         with:
           bundler-cache: true
       - name: Set up Node
-        uses: actions/setup-node@v6.2.0
+        uses: actions/setup-node@v6.3.0
       - name: Bootstrap
         run: script/bootstrap
         env:
